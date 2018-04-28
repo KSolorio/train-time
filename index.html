@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <!--Firebase Reference-->
-    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
-    <!--Moment.js Reference-->
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 </head>
 
 <body>
@@ -26,20 +24,21 @@
     </div>
   </div>
   <!--Current Train Schedule container-->
-  <div class = "container">
+  <div class = "container"id="train-container">
     <div class ="row">
       <div class="col-md-12">
-        <div class="panel panel-primary">
-          <div class="panel-heading">
+        <div class="panel panel-default" id="panel">
+          <div class="panel-heading" style="color:black;">
             <h3 class="panel-title">Current Train Schedule
               <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
             </h3>
           </div>
           <!--Train info goes here-->
           <div class="panel-body">
-            <table class = "table" id="triain-table">
+            <table class = "table" id="train-table">
               <thead>
                 <tr>
+                  <th></th>
                   <th>Train Name</th>
                   <th>Destination</th>
                   <th>Frequency (min)</th>
@@ -56,11 +55,11 @@
     </div>
   </div>
   <!--Add Train-->
-  <div class="container">
+  <div class="container" id="add-train-container">
     <div class="row">
       <div class="col-md-12">
-        <div class="panel panel-primary">
-          <div class="panel-heading">
+        <div class="panel panel-default" id="paneltwo">
+          <div class="panel-heading" style="color:black;">
             <h3 class="panel-title">Add Train
               <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
             </h3>
@@ -98,6 +97,10 @@
   <!--jquery!-->
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--Firebase Reference-->
+  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+  <!--Moment.js Reference-->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
   <!--javascript-->
   <script src="assets/javascript/main.js"></script>
 </body>
